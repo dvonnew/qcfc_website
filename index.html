@@ -2,23 +2,67 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>My test page</title>
     <link href='styles/styles.css' rel="stylesheet">
+    <title>Queen City FC Denver</title>
+    <nav id="navbar">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#sign-up">Sign-up</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
   </head>
   <body>
-    <h1>Queen City FC Crest</h1>
-    <img src="images/club-crest-motto.jpeg" alt="QCFC Club Crest">
-    <p>This is the official website for Queen City FC. Named after Denver, the Queen City of the West, Queen City FC is a new men's soccer 
+    <div id="introduction"></div>
+      <h1>Queen City FC Crest</h1>
+      <img src="images/club-crest-motto.jpeg" alt="QCFC Club Crest" id="crest-image">
+      <br>
+      <h2 id=about>About QCFC</h2>
+        <p>This is the official website for Queen City FC. Named after Denver, the Queen City of the West, Queen City FC is a new men's soccer 
         team in the Denver Metro area coming in summer 2021. Looking to play Sunday soccer at a competitive level and then hit the brewery 
         after? Then this is just the team for you. </p>
-    <p>Interested? Enter your information below to join our mailing list and we'll reach out to 
-      you soon. Cheers!
-        <ul>
-            <li>Full Name</li>
-            <li>Phone Number</li>
-            <li>Email</li>
-        </ul>
-    </p>
+        <p>Interested? Enter your information below to join our mailing list and we'll reach out to 
+        you soon. Cheers!</p>
+    </div>
+    <br>
+    <div id="sign-up">
+      <h2>Sign-up</h2>
+      <p class="sign-up-section">Personal Information:</p>
+      <hr>
+      <form action="/action_page.php">
+        <label for="name">Full Name:</label><br>
+        <input type="text" required id="name" name="name"><br><br>
+        <label for="number">Phone Number:</label><br>
+        <input type="text" required id="number" name="number"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="text" required id="email" name="email"><br><br>
+        <p class="sign-up-section">Playing Experience:</p>
+        <hr>
+        <label for="recreational">
+          <input id="recreational" type='radio' name="experience" value='recreational'> Recreational
+        </label>
+        <label for="highschool">
+          <input id="highschool" type='radio' name="experience" value='highschool'> Highschool
+        </label>
+        <label for="college">
+          <input id="college" type='radio' name="experience" value='college'> College
+        </label>
+        <br><br>
+        <input type="submit" value="Submit" id="submit">
+      </form>
+    </div> 
+    <hr>
+    <div>
+      <footer id="footer">
+        <h2>Contact information</h2>
+        <p>
+          <ul>
+            <li id="club-email">Email: qcfcdenver@gmail.com</li>
+          </ul>
+        </p>
+      </footer>
+    </div>
     <script src="scripts/main.js"></script>
   </body>
 </html> 

@@ -1,11 +1,31 @@
-p, li, h1 {
+#navbar{
+    font-size: 12px;
+    border-radius: 15%;
+    padding-top:10px;
+}
+
+a:hover{
+    color: white;
+}
+
+nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
+  }
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+p, li, h1, form {
     color: rgb(255, 255, 255);
 }
 
 html {
     font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
     font-family: "Open Sans", sans-serif; /* this should be the rest of the output you got from Google fonts */
-    background-color: #021b31;
+    background: linear-gradient(180deg, rgba(0, 22, 122, 0.829), black);
 }
 
 body {
@@ -13,9 +33,10 @@ body {
     margin: 0 auto;
     padding: 0 20px 20px 20px;
     border: 5px solid black;
+    border-radius: 5%;
   }
 h1 {
-    font-size: 60px;
+    font-size: 45px;
     text-align: center;
     margin: 0;
     padding: 20px 0;
@@ -23,13 +44,52 @@ h1 {
     text-shadow: 3px 3px 1px black;
 }
 
-p, li {
-    font-size: 16px;
+p {
+    font-size: 14px;
     line-height: 2;
     letter-spacing: 1px;
+    text-align: justify;
+}
+
+h2{
+    color: white;
+    font-size: 16px;
 }
 
 img {
     display: block;
     margin: 0 auto;
+}
+
+#sign-up {
+    font-size: 14px;
+}
+
+#crest-image {
+    border-radius: 5%;
+}
+
+footer {
+    color: white;
+}
+
+#club-email{
+    color: white;
+    font-size: 14px;
+}
+
+#submit{
+    position: relative;
+    bottom: 10px;
+    border-radius: 5%;
+}
+
+.sign-up-section{
+    line-height: 0;
+}
+
+#submit:hover{
+    background-color:rgba(91, 113, 211, 0.829);
+    border-radius: 5%;
+    color: white;
 }
